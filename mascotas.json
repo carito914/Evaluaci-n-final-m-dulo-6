@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nombre": "Kuky",
+    "rut": "12345678-9"
+  },
+  {
+    "id": 2,
+    "nombre": "Pelusa",
+    "rut": "98765432-1"
+  },
+  {
+    "id": 3,
+    "nombre": "Max",
+    "rut": "11111111-1"
+  },
+  {
+    "id": 4,
+    "nombre": "Luna",
+    "rut": "22222222-2"
+  },
+  {
+    "id": 6,
+    "nombre": "Coco",
+    "rut": "44444444-4"
+  },
+  {
+    "id": 7,
+    "nombre": "Bolita",
+    "rut": "55555555-5"
+  },
+  {
+    "id": 8,
+    "nombre": "Toby",
+    "rut": "66666666-6"
+  },
+  {
+    "id": 9,
+    "nombre": "Nala",
+    "rut": "77777777-7"
+  },
+  {
+    "id": 10,
+    "nombre": "Damian",
+    "rut": "88888888-8"
+  },
+  {
+    "id": 11,
+    "nombre": "Fillippo",
+    "rut": "97.004.000-5"
+  },
+  {
+    "id": 12,
+    "nombre": "Tanaka",
+    "rut": "18.832603-K"
+  },
+  {
+    "id": 13,
+    "nombre": "Rita",
+    "rut": "18.832603-K"
+  }
+]

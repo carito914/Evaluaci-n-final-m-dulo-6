@@ -1,0 +1,41 @@
+<h1> Registro de Mascotas</h1>
+
+{{#if mascotas.length}}
+    <div class="grid-mascotas">
+        {{#each mascotas}}
+            <div class="mascota-card">
+                <div class="card-header">
+                    <span class="badge-id">ID: {{id}}</span>
+                </div>
+                <h3>{{nombre}}</h3>
+                <div class="info">
+                    <p><strong> Dueño RUT:</strong> {{rut}}</p>
+                </div>
+                <button class="btn-eliminar" data-id="{{id}}" data-nombre="{{nombre}}">
+                     Eliminar
+                </button>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <p class="sin-mascotas"> No hay mascotas registradas aún. ¡Agrega una!</p>
+{{/if}}
+
+<script>
+    document.querySelectorAll('.btn-eliminar').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            const nombre = btn.dataset.nombre;
+            if(confirm(`¿Eliminar a ${nombre}?`)) {
+                const response = await fetch(`/api/mascotas?nombre=${encodeURIComponent(nombre)}`, { 
+                    method: 'DELETE' 
+                });
+                if(response.ok) {
+                    location.reload();
+                } else {
+                    const data = await response.json();
+                    alert(data.error || 'Error al eliminar');
+                }
+            }
+        });
+    });
+</script>

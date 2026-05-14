@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Mascotas</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Registro de Mascotas </h1>
+        
+        <div class="grid-mascotas">
+            {{#each mascotas}}
+            <div class="mascota-card">
+                <div class="avatar">
+                    🐾
+                </div>
+                <div class="info">
+                    <h3>{{this.nombre}}</h3>
+                    <p><strong>Dueño RUT:</strong> {{this.rut}}</p>
+                    <p><strong>Edad:</strong> {{this.edad}} años</p>
+                    <p><strong>Raza:</strong> {{this.raza}}</p>
+                    <p><strong>Color:</strong> {{this.color}}</p>
+                </div>
+                <button class="btn-eliminar" data-id="{{this.id}}">Eliminar</button>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>
