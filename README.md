@@ -21,7 +21,7 @@ Sistema web para registrar y gestionar mascotas, desarrollado como parte de la e
 
 ### 1. Clonar o descargar el repositorio
 
-git clone https://github.com/TU-USUARIO/registro-mascotas.git
+git clone https://github.com/carito914/Evaluaci-n-final-m-dulo-6.git
 cd registro-mascotas
 
 
